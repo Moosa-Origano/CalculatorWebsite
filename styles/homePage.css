@@ -1,0 +1,52 @@
+.initialTitle {
+  align-self: center;
+  
+}
+
+
+
+
+.topLayer {
+  display: grid;
+  column-gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+
+
+
+
+
+.calculator {
+
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  margin: auto;
+  width: 90vw; 
+  max-width: 600px; 
+  margin: auto;
+  gap: 10px;
+}
+
+
+
+.output-screen {
+  margin-top: 200px;
+  background-color: lightgray;
+  text-align: right;
+  font-size: 65px;
+  padding-right: 4px;
+  box-sizing: border-box;
+}
+
+.equals {
+  grid-column: span 2;
+}
+
+.button-container button {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
