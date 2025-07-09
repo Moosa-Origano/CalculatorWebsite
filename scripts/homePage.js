@@ -34,23 +34,38 @@ const clearAll = () => {
   currentCalc.innerHTML = ""
 } // function that clears the screen
 
-const deleteLast = () => {
-  if (currentCalc.innerHTML.length > 0) {
-    currentCalc.innerHTML = currentCalc.innerHTML.substring(0, currentCalc.innerHTML.length - 1);
-  }
-} 
+
+
 
 
 clear.onclick = () => {output.innerHTML = ""; currentCalc.innerHTML = ""}
-brackets.onclick = () => {currentCalc.innerHTML += "()"}
-mod.onclick = () => {}
 
 
-
-del.onclick = () => {
+del.onclick = () => { // deletes last character input
   if (currentCalc.innerHTML.length > 0) {
     currentCalc.innerHTML = currentCalc.innerHTML.substring(0, currentCalc.innerHTML.length - 1);
   }
 }
 
 
+
+equals.onclick = () => {
+  try {
+    output.innerHTML = (eval(currentCalc.innerText))
+  }
+
+  catch {
+    output.innerHTML = "Error"
+  } 
+};
+
+
+
+const generalAdding = (element) => {
+  currentCalc.innerHTML += element.innerText
+};
+
+
+const inputButtons = [zero, decimal, one, two, three, plus, four, five, six, minus, seven, eight, nine, times, brackets, mod, divide]
+
+inputButtons.forEach(button => {button.onclick = () => generalAdding(button)})
