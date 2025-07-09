@@ -50,22 +50,46 @@ del.onclick = () => { // deletes last character input
 
 
 equals.onclick = () => {
-  try {
-    output.innerHTML = (eval(currentCalc.innerText))
+  answer = eval(currentCalc.innerText)
+  console.log(typeof answer)
+
+  if (answer > 99999999999999) {
+    output.innerHTML = "Too large"
+  } else {
+
+    try {
+      output.innerHTML = answer
+    }
+
+    catch {
+      output.innerHTML = "Error"
+    } 
   }
 
-  catch {
-    output.innerHTML = "Error"
-  } 
+
 };
 
 
 
 const generalAdding = (element) => {
-  currentCalc.innerHTML += element.innerText
+  switch (element.id) {
+    case "divide": 
+      currentCalc.innerHTML += "/"; 
+      break;
+      
+    case "times":  
+      currentCalc.innerHTML += "*";
+      break;
+
+    default:
+      currentCalc.innerHTML += element.innerText;
+      break;
+  }
+
+  
 };
 
 
-const inputButtons = [zero, decimal, one, two, three, plus, four, five, six, minus, seven, eight, nine, times, brackets, mod, divide]
+const inputButtons = [zero, decimal, one, two, three, plus, four, five, six, minus, seven, eight, nine, times, brackets, mod, divide];
 
-inputButtons.forEach(button => {button.onclick = () => generalAdding(button)})
+inputButtons.forEach(button => {button.onclick = () => generalAdding(button)});
