@@ -12,22 +12,49 @@
 
 
 .output-screen {
-  height: 300px;
-  background-color: lightgray;
+  position: relative;
+  height: 275px;
   text-align: right;
   font-size: 65px;
-  padding-right: 40px;
   box-sizing: border-box;
-  background-color: #ECF0F1;
-  color: #2C3E50;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
 
 }
+
+
+#current-calc {
+  font-size: 45px;
+  margin-right: 20px;
+  margin-top: 20px;
+
+
+}
+
+#output {
+  font-size: 60px;
+  background-color: white;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  height: 150px;
+  border-radius: 1000px;
+  color: black;
+
+  align-items: center;
+  vertical-align: middle;
+  line-height: 150px;
+  padding-right: 30px;
+}
+
 
 
 .button-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: auto;
   max-width: 600px; 
   margin: auto;
   gap: 10px;
@@ -53,7 +80,7 @@
 }
 
 .button-container button:hover {
-  background-color: grey;
+  background-color: darkgray;
   transform: scale(1.05)
   
 }
