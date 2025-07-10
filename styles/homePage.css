@@ -1,13 +1,15 @@
 
 
 .calculator {
-  max-width: 500px;
+  max-width: 600px;
   min-width: 20px;
   border-radius: 10px;
   border-style: none;
   border-width: 3px;
-  background-image: linear-gradient(#962323, #847877);
+  background: rgba(255,255,255,0.5);
   margin: 200px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 
@@ -61,7 +63,7 @@
   max-width: 600px; 
   margin: auto;
   gap: 10px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   border: none;
 
@@ -75,8 +77,8 @@
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border-style: none;
-  background-color: 	rgb(109, 108, 108);
-  color: white;
+  background-color: white;
+  color: black;
   font-size: 22px;
   cursor: pointer;
   transition: background-color 0.5s;
