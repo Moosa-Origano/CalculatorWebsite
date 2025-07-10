@@ -53,8 +53,8 @@ equals.onclick = () => {
   answer = eval(currentCalc.innerText)
   console.log(typeof answer)
 
-  if (answer > 99999999999999) {
-    output.innerHTML = "Too large"
+  if (answer > 99999999999999 || answer < -9999999999999) {
+    output.innerHTML = "Overflow"
   } else {
 
     try {
@@ -79,6 +79,10 @@ const generalAdding = (element) => {
       
     case "times":  
       currentCalc.innerHTML += "*";
+      break;
+
+    case "minus":
+      currentCalc.innerHTML += "-"
       break;
 
     default:

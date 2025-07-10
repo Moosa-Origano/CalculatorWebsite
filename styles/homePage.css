@@ -6,7 +6,7 @@
   border-radius: 10px;
   border-style: none;
   border-width: 3px;
-  background-color: #2C3E50;
+  background-image: linear-gradient(#962323, #847877);
   margin: 200px;
 }
 
@@ -62,9 +62,9 @@
   margin: auto;
   gap: 10px;
   padding: 10px;
-  background-color: grey;
   border-radius: 8px;
   border: none;
+
 }
 
 
