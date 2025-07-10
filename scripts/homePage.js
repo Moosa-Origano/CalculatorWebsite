@@ -90,6 +90,6 @@ const generalAdding = (element) => {
 };
 
 
-const inputButtons = [zero, decimal, one, two, three, plus, four, five, six, minus, seven, eight, nine, times, brackets, mod, divide];
+const inputButtons = [zero, decimal, one, two, three, plus, four, five, six, minus, seven, eight, nine, times, brackets, mod, divide]; // shouldve jused used class for all these buttons
 
 inputButtons.forEach(button => {button.onclick = () => generalAdding(button)});
