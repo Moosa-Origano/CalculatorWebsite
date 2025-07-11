@@ -1,3 +1,4 @@
+console.log("is this even being run?")
 let currentCalc = document.getElementById("current-calc")
 let output = document.getElementById("output")
 
