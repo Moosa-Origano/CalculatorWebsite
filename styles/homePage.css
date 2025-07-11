@@ -12,9 +12,9 @@
 
 .output-screen {
   position: relative;
-  height: 23vh;
+
   text-align: right;
-  font-size: 65px;
+  font-size: 4vw;
   box-sizing: border-box;
   color: grey;
   display: grid;
@@ -22,11 +22,12 @@
   grid-template-rows: 1fr 1fr;
   width: 100%;
   margin: 0 auto;
+  height: 26vh;
 }
 
 
 #current-calc {
-  font-size: 55px;
+  font-size: 5vh;
   white-space: nowrap;
   overflow: hidden;
   display: flex;
@@ -39,11 +40,11 @@
 
 
 #output {
-  font-size: 60px;
+  font-size: 6vh;
   background-color: white;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 30px;
+  margin-right: 1vh;
+  margin-left: 1vh;
+  margin-top: 3vh;
   height: 12vh;
   margin-bottom: 3vh;
   border-radius: 50px;
@@ -79,13 +80,13 @@
   border-style: none;
   background-color: white;
   color: black;
-  font-size: 32px;
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.5s;
 }
 
 .button-container button:hover {
-  background-color: darkgray;
+  background-color: rgb(200, 221, 230);
   transform: scale(1.05)
   
 }
